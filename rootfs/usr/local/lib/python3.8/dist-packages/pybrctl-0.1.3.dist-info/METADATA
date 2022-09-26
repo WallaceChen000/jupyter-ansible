@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pybrctl
+Version: 0.1.3
+Summary: Python brctl wrapper
+Home-page: https://github.com/udragon/pybrctl
+Author: Ido Nahshon
+Author-email: udragon@gmail.com
+License: GPLv2
+Keywords: brctl,bridge-utils
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+
+Pybrctl
+=======
+
+Pybrctl is a pure Python library for managing bridges. It is a lightwight wrapper for the linux brctl command, included in the bridge-utils package.
+It requires Python, Linux, and the bridge-utils package.
+
+It was written by Ido Nahshon at Jan 2015, and it was released under the GPL license.
+
+Example Usage
+=============
+This example shows how to set up a new bridge and remove it::
+
+  from pybrctl import BridgeController
+
+  brctl = BridgeController()
+
+  b = brctl.addbr("br0")
+  b.addif("eth0")
+  b.addif("eth1")
+  b.setmaxageing(0)
+
+  brctl.delbr("br0")
+
+Source
+======
+
+Latest version on github: https://github.com/udragon/pybrctl
+Feel free to contribute. ;)
+
+
+

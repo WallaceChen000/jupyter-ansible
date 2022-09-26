@@ -1,0 +1,7 @@
+*.code-workspace
+rootfs.tar.gz
+#*.tar.gz
+*.tar.gz.run
+python3.8-dist-packages.tar.gz
+python3.8.tar.gz
+__pycache__
