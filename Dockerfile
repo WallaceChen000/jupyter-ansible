@@ -28,7 +28,7 @@ RUN dpkg-reconfigure openssh-server && echo 'root:SystemControl' | chpasswd && \
     sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
-    sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config && \
+    sed -i 's/#Port 22/Port 2223/' /etc/ssh/sshd_config && \
     rm -f /etc/service/sshd/down
 
 # Install runservice.sh

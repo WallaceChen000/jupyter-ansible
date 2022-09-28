@@ -1,0 +1,112 @@
+objects:
+  role: {}
+plugins:
+  become: {}
+  cache: {}
+  callback: {}
+  cliconf: {}
+  connection: {}
+  httpapi: {}
+  inventory: {}
+  lookup: {}
+  module:
+    na_sg_grid_account:
+      description: NetApp StorageGRID manage accounts.
+      name: na_sg_grid_account
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_grid_certificate:
+      description: Manage the Storage API and Grid Management certificates on StorageGRID.
+      name: na_sg_grid_certificate
+      namespace: ''
+      version_added: 21.6.0
+    na_sg_grid_client_certificate:
+      description: Manage Client Certificates on StorageGRID.
+      name: na_sg_grid_client_certificate
+      namespace: ''
+      version_added: 21.11.0
+    na_sg_grid_dns:
+      description: NetApp StorageGRID manage external DNS servers for the grid.
+      name: na_sg_grid_dns
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_grid_gateway:
+      description: Manage Load balancer (gateway) endpoints on StorageGRID.
+      name: na_sg_grid_gateway
+      namespace: ''
+      version_added: 21.7.0
+    na_sg_grid_group:
+      description: NetApp StorageGRID manage groups.
+      name: na_sg_grid_group
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_grid_ha_group:
+      description: Manage high availability (HA) group configuration on StorageGRID.
+      name: na_sg_grid_ha_group
+      namespace: ''
+      version_added: 21.10.0
+    na_sg_grid_identity_federation:
+      description: NetApp StorageGRID manage Grid identity federation.
+      name: na_sg_grid_identity_federation
+      namespace: ''
+      version_added: 21.6.0
+    na_sg_grid_info:
+      description: NetApp StorageGRID Grid information gatherer.
+      name: na_sg_grid_info
+      namespace: ''
+      version_added: 20.11.0
+    na_sg_grid_ntp:
+      description: NetApp StorageGRID manage external NTP servers for the grid.
+      name: na_sg_grid_ntp
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_grid_regions:
+      description: NetApp StorageGRID manage Regions for the grid.
+      name: na_sg_grid_regions
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_grid_traffic_classes:
+      description: Manage Traffic Classification Policy configuration on StorageGRID.
+      name: na_sg_grid_traffic_classes
+      namespace: ''
+      version_added: 21.10.0
+    na_sg_grid_user:
+      description: NetApp StorageGRID manage users.
+      name: na_sg_grid_user
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_org_container:
+      description: Manage buckets on StorageGRID.
+      name: na_sg_org_container
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_org_group:
+      description: NetApp StorageGRID manage groups within a tenancy.
+      name: na_sg_org_group
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_org_identity_federation:
+      description: NetApp StorageGRID manage Tenant identity federation.
+      name: na_sg_org_identity_federation
+      namespace: ''
+      version_added: 21.6.0
+    na_sg_org_info:
+      description: NetApp StorageGRID Org information gatherer.
+      name: na_sg_org_info
+      namespace: ''
+      version_added: 20.11.0
+    na_sg_org_user:
+      description: NetApp StorageGRID manage users within a tenancy.
+      name: na_sg_org_user
+      namespace: ''
+      version_added: 20.6.0
+    na_sg_org_user_s3_key:
+      description: Creates NetApp StorageGRID User S3 keys.
+      name: na_sg_org_user_s3_key
+      namespace: ''
+      version_added: 20.6.0
+  netconf: {}
+  shell: {}
+  strategy: {}
+  vars: {}
+version: 21.11.0
